@@ -35,7 +35,7 @@ class Player(DirectObject):
 
 class BabyMonster(DirectObject):
     def __init__(self, scale):
-        self.actor = Actor("models/monster1.egg", {"attack" : "models/monster1-pincer-attack-both.egg", "explode" : "./models/monster1-explode.egg"})
+        self.actor = Actor("models/monster1.egg", {"attack" : "models/monster1-pincer-attack-both.egg"})
         self.actor.setScale(0.25, 0.25, 0.25)
         self.actor.reparentTo(base.render)
         self.actor.setPythonTag("monster", '1')
